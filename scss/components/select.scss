@@ -1,0 +1,60 @@
+.c-select {
+  position: relative;
+  width: fit-content;
+  margin: 10px auto;
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 40px;
+    border: 0;
+    color: #fff;
+    color: #fff;
+    display: block;
+    display: flex;
+    font-family: "MuseoSans-700";
+    font-size: 15px;
+    margin: 0 auto;
+    outline: none;
+    padding: 15px 36px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: top 0.3s, padding 0.3s;
+    background-image: linear-gradient(
+      to right top,
+      #50a2ff,
+      #50a8ff,
+      #4689c1,
+      #1f7eb0
+    );
+
+    option {
+      background-color: #fff;
+      color: #666666;
+      cursor: pointer;
+
+      font-size: 16px;
+      font-family: "MuseoSans-700";
+    }
+  }
+  .c-arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: block;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+  }
+  label.error {
+    color: red;
+    margin: 10px 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+  }
+}

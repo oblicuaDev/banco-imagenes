@@ -1,0 +1,227 @@
+@use "../abstracts" as *;
+@include font-face(
+  "MuseoSans Condensed",
+  museo-sans-condensed-700-webfont,
+  "normal",
+  "normal",
+  "MuseoSansCond"
+);
+@include font-face(
+  "MuseoSans-100",
+  MuseoSans-100,
+  "100",
+  "normal",
+  "MuseoSans"
+);
+@include font-face(
+  "MuseoSans-500",
+  MuseoSans-500,
+  "500",
+  "normal",
+  "MuseoSans"
+);
+@include font-face(
+  "MuseoSans-700",
+  MuseoSans-700,
+  "700",
+  "normal",
+  "MuseoSans"
+);
+@include font-face(
+  "MuseoSans-900",
+  MuseoSans-900,
+  "900",
+  "normal",
+  "MuseoSans"
+);
+@include font-face(
+  "MuseoSansCyrl",
+  MuseoSansCyrl,
+  "normal",
+  "normal",
+  "MuseoSansCyrl"
+);
+@include font-face(
+  "MuseoSansCyrl",
+  MuseoSansCyrl_0 3,
+  "normal",
+  "normal",
+  "MuseoSansCyrl"
+);
+@include font-face(
+  "museosans-500italic",
+  museosans-500italic,
+  "500",
+  "italic",
+  "MuseoSans"
+);
+
+body {
+  font-size: 10px;
+  font-family: var(--font-primary);
+  color: #000;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 70px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+h5 {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+h6 {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+p,
+li {
+  color: var(--textos);
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 18px;
+}
+a {
+  color: var(--orangeText);
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+small {
+  color: var(--textos);
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.thin {
+  font-weight: 100;
+}
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.black {
+  font-weight: 900;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.table {
+  box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .max {
+    max-width: 768px;
+  }
+  .thead {
+    .tr {
+      display: flex;
+      align-items: center;
+      .th {
+        padding: 5px 20px 0;
+        color: #565656;
+        font-family: var(--font-primary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: -0.02em;
+        line-height: 22px;
+        flex: 1;
+      }
+    }
+  }
+  .tbody {
+    .tr {
+      display: flex;
+      align-items: center;
+      .td {
+        flex: 1;
+        color: #565656;
+        padding: 5px 20px 10px;
+        font-family: var(--font-primary);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: -0.02em;
+        line-height: 22px;
+      }
+    }
+  }
+  #notify {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

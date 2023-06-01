@@ -1,0 +1,233 @@
+.search {
+  .grid {
+    padding: 90px 0;
+    -webkit-box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    h2,
+    h3 {
+      text-align: center;
+    }
+    h2 {
+      color: #333333;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 26px;
+      color: #666;
+      text-align: center;
+      font-family: "MuseoSans-700";
+      margin-bottom: 30px;
+    }
+    .grid-layout {
+      display: grid;
+      gap: 12px;
+      max-width: 1200px;
+      margin: 0 auto;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .row-1 {
+        display: grid;
+        gap: 12px;
+        grid-template-rows: 200px;
+        grid-template-columns: 490px 691px;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .row-2 {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 790px 390px;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col-1 {
+          gap: 12px;
+          display: grid;
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+          &__row-1 {
+            display: grid;
+            grid-template-columns: 330px 450px;
+            gap: 12px;
+            grid-auto-rows: 270px;
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+          &__row-2 {
+            display: grid;
+            grid-template-columns: 390px 390px;
+            gap: 12px;
+            grid-auto-rows: 244px;
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+        .col-2 {
+          display: grid;
+          gap: 12px;
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      a {
+        // min-width: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @media only screen and (max-width: 768px) {
+          padding: 10px;
+          height: 50vw;
+        }
+        &.size1 {
+          height: 200px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+        &.size2 {
+          height: 410px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+        &.size3 {
+          height: 552px;
+          grid-row: span 2;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+            grid-row: span 1;
+          }
+        }
+        &.size4 {
+          height: 270px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        strong {
+          color: #fff;
+          font-family: "MuseoSans-900";
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          position: relative;
+          line-height: normal;
+          text-align: center;
+          text-shadow: 4px 4px 7px rgb(0 0 0 / 75%);
+          transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+          z-index: 2;
+          @media only screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .atractivos {
+    padding: 90px 0;
+    -webkit-box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    h2 {
+      font-size: 26px;
+      color: #666;
+      text-align: center;
+      font-family: "MuseoSans-100";
+      margin-bottom: 15px;
+      strong {
+        font-family: "MuseoSans-900";
+        color: #333;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: "MuseoSans-900";
+    }
+    .grid-atractivos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      max-width: 1200px;
+      grid-auto-rows: calc(1200px / 3 - 8px);
+      gap: 8px;
+      margin: 0 auto;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (max-width: 768px) {
+          height: 50vw;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.3);
+          top: 0;
+          left: 0;
+        }
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+          left: 0;
+        }
+        strong {
+          color: #fff;
+          font-family: "MuseoSans-900";
+          font-size: 18px;
+          letter-spacing: 0.2rem;
+          position: relative;
+          text-align: center;
+          text-shadow: 4px 4px 7px rgb(0 0 0 / 75%);
+          transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+          z-index: 2;
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+footer {
+  background-image: linear-gradient(
+    to right top,
+    #ecbd40,
+    #c4c148,
+    #9dc15a,
+    #7abe70,
+    #5bb985
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  small {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: underline;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

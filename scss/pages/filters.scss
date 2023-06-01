@@ -1,0 +1,209 @@
+.titleResult {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 20px 0;
+  h2 {
+    margin-bottom: 10px;
+    color: #666666;
+    font-family: "MuseoSans-900";
+    font-size: 35px;
+    b {
+      color: #333333;
+    }
+  }
+  h3 {
+    font-family: "MuseoSans-700";
+    color: #666666;
+    font-size: 22px;
+  }
+}
+.portal_list {
+  position: relative;
+}
+.left {
+  margin-right: 88px;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: -350px;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  .filterContainer {
+    position: relative;
+  }
+  #openFilters {
+    -webkit-box-shadow: 0px 0px 26px -4px #212121;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 26px -4px #212121;
+    display: flex;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transform-origin: top;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    background-image: linear-gradient(
+      to bottom,
+      #50a2ff,
+      #50a8ff,
+      #4689c1,
+      #1f7eb0
+    );
+    img {
+      width: 20px;
+    }
+    small {
+      color: #fff;
+      font-size: 10px;
+      text-align: center;
+      display: block;
+    }
+  }
+  &.active {
+    left: 0;
+    #openFilters {
+      background-image: linear-gradient(
+        to bottom,
+        #6dcb8e,
+        #69cb7c,
+        #5ba780,
+        #359766
+      );
+    }
+  }
+  .filters {
+    background-color: #fff;
+    border-radius: 0 31px 31px 0;
+    padding: 50px;
+    width: 100%;
+    h4 {
+      color: #51728d;
+      font-family: "MuseoSans-700";
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      min-height: 50px;
+      li {
+        margin: 2.5px;
+        position: relative;
+        input:checked + label,
+        label:hover {
+          background-image: linear-gradient(
+            to bottom,
+            #509eff,
+            #50a4ff,
+            #4685bd,
+            #1f7eac
+          );
+          color: #fff;
+          border: 1px solid transparent;
+        }
+        label {
+          &:active {
+            color: #fff;
+            background-image: linear-gradient(45deg, #606e7a, #606e7a);
+          }
+        }
+        label {
+          border-radius: 7px;
+          overflow: hidden;
+          border: 1px solid #606e7a;
+          align-items: center;
+          background-image: linear-gradient(to bottom, #fff, #fff);
+          display: inline-flex;
+          font-size: 12px;
+          height: 25px;
+          justify-content: center;
+          padding: 0 12px;
+          cursor: pointer;
+          transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        input {
+          cursor: pointer;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          pointer-events: none;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.right {
+  padding: 50px 0;
+  min-height: 100vh;
+  .grid-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      a {
+        display: block;
+      }
+      img {
+        width: 100%;
+        height: calc(100vw / 16 * 9 / 4);
+        object-fit: cover;
+        @media only screen and (max-width: 768px) {
+          height: calc(100vw / 16 * 9);
+        }
+      }
+
+      .info {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        div {
+          font-size: 14px;
+          margin-bottom: 10px;
+          padding: 8px 30px;
+        }
+        small {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+      &:hover {
+        .info {
+          top: 0;
+        }
+      }
+    }
+  }
+}

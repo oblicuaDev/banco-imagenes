@@ -1,0 +1,339 @@
+.home {
+  .banner {
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    &::after {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .search-form {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      width: 100%;
+      h2,
+      h3 {
+        color: #fff;
+      }
+      h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 768px) {
+          font-size: 30px;
+          margin-bottom: 10px;
+          line-height: normal;
+        }
+      }
+      h3 {
+        margin-bottom: 30px;
+        font-family: "MuseoSans-100";
+        font-size: 35px;
+        @media only screen and (max-width: 768px) {
+          font-size: 22px;
+          margin-bottom: 10px;
+          line-height: normal;
+        }
+      }
+      form {
+        border-radius: 100px;
+        margin: 0 auto;
+        max-width: 700px;
+        width: 100%;
+        display: flex;
+        padding: 6px;
+        background-image: linear-gradient(
+          to bottom,
+          #ff7c47,
+          #ff8033,
+          #cf4c1f,
+          #b0411a
+        );
+        input {
+          padding: 13px 20px;
+          background-color: #fff;
+          border-radius: 25px;
+          width: 86%;
+          font-size: 18px;
+          margin-right: 15px;
+          @media only screen and (max-width: 768px) {
+            width: 50%;
+          }
+        }
+        button {
+          width: 30px;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .grid {
+    padding: 90px 0;
+    -webkit-box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    h2,
+    h3 {
+      text-align: center;
+    }
+    h2 {
+      color: #333333;
+      font-size: 40px;
+      margin-bottom: 15px;
+      @media only screen and (max-width: 768px) {
+        color: #333;
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: normal;
+      }
+    }
+    h3 {
+      font-size: 32px;
+      color: #666666;
+      margin-bottom: 90px;
+      @media only screen and (max-width: 768px) {
+        color: #666666;
+        font-size: 22px;
+        margin-bottom: 15px;
+        line-height: normal;
+      }
+    }
+    .grid-layout {
+      display: grid;
+      gap: 12px;
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 480px;
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .row-1 {
+        display: grid;
+        gap: 12px;
+        grid-template-rows: 200px;
+        grid-template-columns: 490px 691px;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .row-2 {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 790px 390px;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .col-1 {
+          gap: 12px;
+          display: grid;
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+          &__row-1 {
+            display: grid;
+            grid-template-columns: 330px 450px;
+            gap: 12px;
+            grid-auto-rows: 270px;
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+          &__row-2 {
+            display: grid;
+            grid-template-columns: 390px 390px;
+            gap: 12px;
+            grid-auto-rows: 244px;
+            @media only screen and (max-width: 768px) {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+        .col-2 {
+          display: grid;
+          gap: 12px;
+          @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        @media only screen and (max-width: 768px) {
+          padding: 10px;
+          height: 50vw;
+        }
+        &.size1 {
+          height: 200px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+        &.size2 {
+          height: 410px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+        &.size3 {
+          height: 552px;
+          grid-row: span 2;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+            grid-row: span 1;
+          }
+        }
+        &.size4 {
+          height: 270px;
+          @media only screen and (max-width: 768px) {
+            height: 50vw;
+          }
+        }
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        strong {
+          color: #fff;
+          font-family: "MuseoSans-900";
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          position: relative;
+          line-height: normal;
+          text-align: center;
+          text-shadow: 4px 4px 7px rgb(0 0 0 / 75%);
+          transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+          z-index: 2;
+          @media only screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  .counter {
+    -webkit-box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      height: auto;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        padding: 50px 20px;
+        @media only screen and (max-width: 768px) {
+          padding: 30px 0;
+        }
+
+        h4 {
+          font-size: 4rem;
+          font-family: "MuseoSans-900";
+          text-align: center;
+          margin-bottom: 10px;
+          line-height: 4rem;
+          color: #333333;
+          @media only screen and (max-width: 768px) {
+            font-size: 3rem;
+          }
+        }
+
+        h5 {
+          font-family: "MuseoSans-900";
+          font-size: 1.8rem;
+          text-align: center;
+          line-height: 1.8rem;
+          color: #333333;
+          @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+        &.counter-center {
+          border-right: 4px solid #333333;
+          border-left: 4px solid #333333;
+          @media only screen and (max-width: 768px) {
+            border-right: 0;
+            border-left: 0;
+            border-top: 4px solid #333333;
+            border-bottom: 4px solid #333333;
+          }
+        }
+      }
+    }
+  }
+  .lastphotos,
+  .downloaded {
+    -webkit-box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    box-shadow: 0px 8px 29px -2px rgba($color: #000, $alpha: 0.5);
+    padding: 80px 0;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333333;
+      font-family: "MuseoSans-900";
+    }
+    li {
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
