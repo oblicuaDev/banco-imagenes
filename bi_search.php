@@ -306,7 +306,7 @@ $content2 = json_encode($content);
                   src="<?=$products[9]->field_cover_image?>"
                   alt=""
               /></a>
-              <a class="size5" href="resultados/?productid=<?=$products[10]->nid?>"
+              <a class="size5" href="resultados/?productid=<?=$products[11]->nid?>"
                 ><strong class="uppercase"><?=$products[11]->title?></strong
                 ><img
                   src="<?=$products[11]->field_cover_image?>"

@@ -385,7 +385,7 @@ async function getAllCategoriesWithImages() {
             src="${allCategories[9].field_cover_image}"
             alt=""
         /></a>
-        <a class="size5" href="resultados/?productid=${allCategories[10].nid}"
+        <a class="size5" href="resultados/?productid=${allCategories[11].nid}"
           ><strong class="uppercase">${allCategories[11].title}</strong
           ><img
             src="${allCategories[11].field_cover_image}"
