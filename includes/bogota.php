@@ -18,7 +18,7 @@ class bogota
     public $subproducts = array();
     public $RLDgeneralInfo = array();
     public $BIgeneralInfo = array();
-    public $language = "";
+    public $language = "es";
     public $production = true;
 
     function __construct($language, $development = false)
