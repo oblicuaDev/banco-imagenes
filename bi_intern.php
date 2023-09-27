@@ -43,14 +43,14 @@ $b->getImages($explode1, $explode2); }
         </div>
       </div>
       <div class="imageinfo">
-        <span class="title"
-          >ATRACTIVO:
-          <a
-            target="_blank"
+        <span class="title">
+          ATRACTIVO:
+          <a target="_blank" rel="noopener noreferrer"
             href="https://bogotadc.travel/es/atractivo/all/<?=$b->get_alias($image->field_bi_atractivo_relacionado_1)?>-all-<?=$image->field_bi_atractivo_relacionado?>"
-            ><?=$image->field_bi_atractivo_relacionado_1?></a
-          ></span
-        >
+            aria-label="Ver detalles del atractivo <?=$image->field_bi_atractivo_relacionado_1?>"
+           >
+            <?=$image->field_bi_atractivo_relacionado_1?></a>
+            </span>
         <div class="rules">
           <?=$infoGnrl->field_bi_texto_descarga?>
           <p style="margin-top: 20px">
@@ -200,7 +200,7 @@ $b->getImages($explode1, $explode2); }
       >
     </div>
     <div class="politics_checkbox">
-      <input type="checkbox" name="politics" id="politics" checked />
+      <input type="checkbox" name="politics" id="politics_" checked />
       <span class="politics_checkbox_mark"></span>
       <label for="politics"
         ><strong>He leído y acepto</strong> las condiciones de uso de la imagen.

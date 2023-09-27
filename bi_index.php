@@ -12,6 +12,7 @@
           <div class="autocomplete">
             <input
               type="search"
+              aria-label="search"
               name="search"
               id="search"
               autocomplete="off"
