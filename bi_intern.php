@@ -45,7 +45,7 @@ $b->getImages($explode1, $explode2); }
       <div class="imageinfo">
         <span class="title">
           ATRACTIVO:
-          <a target="_blank"
+          <a target="_blank" rel="noopener noreferrer"
             href="https://bogotadc.travel/es/atractivo/all/<?=$b->get_alias($image->field_bi_atractivo_relacionado_1)?>-all-<?=$image->field_bi_atractivo_relacionado?>"
             ><?=$image->field_bi_atractivo_relacionado_1?></a>
             </span>
