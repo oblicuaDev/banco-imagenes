@@ -12,6 +12,7 @@
           <div class="autocomplete">
             <input
               type="search"
+              aria-label="search"
               name="search"
               id="search"
               autocomplete="off"
@@ -24,12 +25,12 @@
           </div>
           <div class="types-checks">
             <div class="politics_checkbox">
-              <input type="checkbox" name="imagenes" id="imagenes" />
+              <input type="checkbox" aria-label="checkbox" name="imagenes" id="imagenes" />
               <span class="politics_checkbox_mark"></span>
               <label for="imagenes">Imágenes</label>
             </div>
             <div class="politics_checkbox">
-              <input type="checkbox" name="videos" id="videos" />
+              <input type="checkbox" aria-label="checkbox" name="videos" id="videos" />
               <span class="politics_checkbox_mark"></span>
               <label for="videos">Videos</label>
             </div>
