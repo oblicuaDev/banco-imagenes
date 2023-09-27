@@ -602,6 +602,22 @@ class bogota
        }
       
     }
+    function calculateDistanceInKM($currentLocation, $placeLocation){
+        // Radio de la Tierra en kilómetros
+        $earthRadiusKM = 6371;
+        // Convertir latitudes y longitudes de grados a radianes
+        $lat1Rad = deg2rad(90 - $currentLocation[0]);
+        $lat2Rad = deg2rad(90 - $placeLocation[0]);
+        $deltaLongRad = deg2rad($currentLocation[1] - $placeLocation[1]);
+
+        // Calcular la distancia usando la fórmula del haversine
+        $distanceInKM = $earthRadiusKM * acos(
+            cos($lat1Rad) * cos($lat2Rad) +
+            sin($lat1Rad) * sin($lat2Rad) * cos($deltaLongRad)
+        );
+
+        return $distanceInKM;
+    }
     function distance($currentLocation, $placeLocation)
     {
         $distanceinKM = 6371 * acos(cos(deg2rad(90 - $currentLocation[0])) * cos(deg2rad(90 - $placeLocation[0])) + sin(deg2rad(90 - $currentLocation[0])) * sin(deg2rad(90 - $placeLocation[0])) * cos(deg2rad($currentLocation[1] - $placeLocation[1])));
