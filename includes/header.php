@@ -7,7 +7,7 @@
         <form action="resultados/" id="searchHeaderForm">
         <div class="autocomplete">
             <span>
-                <input type="search"   type="search"
+                <input type="search"   aria-label="search"
               name="search"
               id="search"
               placeholder="<?=$infoGnrl->field_bi_placesearch?>"/>
