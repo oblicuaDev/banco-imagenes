@@ -200,7 +200,7 @@ $b->getImages($explode1, $explode2); }
       >
     </div>
     <div class="politics_checkbox">
-      <input type="checkbox" name="politics" id="politics" checked />
+      <input type="checkbox" name="politics" id="politics_" checked />
       <span class="politics_checkbox_mark"></span>
       <label for="politics"
         ><strong>He leído y acepto</strong> las condiciones de uso de la imagen.
