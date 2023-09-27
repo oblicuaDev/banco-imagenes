@@ -247,19 +247,19 @@ $content2 = json_encode($content);
               ><strong class="uppercase"><?=$products[0]->title?></strong
               ><img
                 src="<?=$products[0]->field_cover_image?>"
-                alt=""
+                alt="resultados"
             /></a>
             <a class="size2" href="resultados/?productid=<?=$products[1]->nid?>"
               ><strong class="uppercase"><?=$products[1]->title?></strong
               ><img
                 src="<?=$products[1]->field_cover_image?>"
-                alt=""
+                alt="resultados"
             /></a>
             <a class="size1" href="resultados/?productid=<?=$products[2]->nid?>"
               ><strong class="uppercase"><?=$products[2]->title?></strong
               ><img
                 src="<?=$products[2]->field_cover_image?>"
-                alt=""
+                alt="resultados"
             /></a>
           </div>
           <div class="row-2">
@@ -269,19 +269,19 @@ $content2 = json_encode($content);
                   ><strong class="uppercase"><?=$products[3]->title?></strong
                   ><img
                     src="<?=$products[3]->field_cover_image?>"
-                    alt=""
+                    alt="resultados"
                 /></a>
                 <a class="size4" href="resultados/?productid=<?=$products[4]->nid?>"
                   ><strong class="uppercase"><?=$products[4]->title?></strong
                   ><img
                     src="<?=$products[4]->field_cover_image?>"
-                    alt=""
+                    alt="resultados"
                 /></a>
                 <a class="size4" href="resultados/?productid=<?=$products[6]->nid?>"
                   ><strong class="uppercase"><?=$products[6]->title?></strong
                   ><img
                     src="<?=$products[6]->field_cover_image?>"
-                    alt=""
+                    alt="resultados"
                 /></a>
               </div>
               <div class="col-1__row-2">
@@ -289,13 +289,13 @@ $content2 = json_encode($content);
                   ><strong class="uppercase"><?=$products[7]->title?></strong
                   ><img
                     src="<?=$products[7]->field_cover_image?>"
-                    alt=""
+                    alt="resultados"
                 /></a>
                 <a href="resultados/?productid=<?=$products[8]->nid?>"
                   ><strong class="uppercase"><?=$products[8]->title?></strong
                   ><img
                     src="<?=$products[8]->field_cover_image?>"
-                    alt=""
+                    alt="resultados"
                 /></a>
               </div>
             </div>
@@ -304,13 +304,13 @@ $content2 = json_encode($content);
                 ><strong class="uppercase"><?=$products[9]->title?></strong
                 ><img
                   src="<?=$products[9]->field_cover_image?>"
-                  alt=""
+                  alt="resultados"
               /></a>
               <a class="size5" href="resultados/?productid=<?=$products[11]->nid?>"
                 ><strong class="uppercase"><?=$products[11]->title?></strong
                 ><img
                   src="<?=$products[11]->field_cover_image?>"
-                  alt=""
+                  alt="resultados"
               /></a>
             </div>
           </div>
