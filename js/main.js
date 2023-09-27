@@ -326,19 +326,19 @@ async function getAllCategoriesWithImages() {
         ><strong class="uppercase">${allCategories[0].title}</strong
         ><img
           src="${allCategories[0].field_cover_image}"
-          alt=""
+          alt="results"
       /></a>
       <a class="size2" href="resultados/?productid=${allCategories[1].nid}"
         ><strong class="uppercase">${allCategories[1].title}</strong
         ><img
           src="${allCategories[1].field_cover_image}"
-          alt=""
+          alt="results"
       /></a>
       <a class="size1" href="resultados/?productid=${allCategories[2].nid}"
         ><strong class="uppercase">${allCategories[2].title}</strong
         ><img
           src="${allCategories[2].field_cover_image}"
-          alt=""
+          alt="results"
       /></a>
     </div>
     <div class="row-2">
@@ -348,19 +348,19 @@ async function getAllCategoriesWithImages() {
             ><strong class="uppercase">${allCategories[3].title}</strong
             ><img
               src="${allCategories[3].field_cover_image}"
-              alt=""
+              alt="results"
           /></a>
           <a class="size4" href="resultados/?productid=${allCategories[4].nid}"
             ><strong class="uppercase">${allCategories[4].title}</strong
             ><img
               src="${allCategories[4].field_cover_image}"
-              alt=""
+              alt="results"
           /></a>
           <a class="size4" href="resultados/?productid=${allCategories[6].nid}"
             ><strong class="uppercase">${allCategories[6].title}</strong
             ><img
               src="${allCategories[6].field_cover_image}"
-              alt=""
+              alt="results"
           /></a>
         </div>
         <div class="col-1__row-2">
@@ -368,13 +368,13 @@ async function getAllCategoriesWithImages() {
             ><strong class="uppercase">${allCategories[7].title}</strong
             ><img
               src="${allCategories[7].field_cover_image}"
-              alt=""
+              alt="results"
           /></a>
           <a href="resultados/?productid=${allCategories[8].nid}"
             ><strong class="uppercase">${allCategories[8].title}</strong
             ><img
               src="${allCategories[8].field_cover_image}"
-              alt=""
+              alt="results"
           /></a>
         </div>
       </div>
@@ -383,13 +383,13 @@ async function getAllCategoriesWithImages() {
           ><strong class="uppercase">${allCategories[9].title}</strong
           ><img
             src="${allCategories[9].field_cover_image}"
-            alt=""
+            alt="results"
         /></a>
         <a class="size5" href="resultados/?productid=${allCategories[11].nid}"
           ><strong class="uppercase">${allCategories[11].title}</strong
           ><img
             src="${allCategories[11].field_cover_image}"
-            alt=""
+            alt="results"
         /></a>
       </div>
     </div>`;
