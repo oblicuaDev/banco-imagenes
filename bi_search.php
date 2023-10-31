@@ -166,7 +166,7 @@ $content2 = json_encode($content);
            ?>
             <li data-image="<?= $images[$i]->field_is_video == '1' ? strtolower(str_replace('.mp4', '.jpg', $images[$i]->field_bi_imagen)): $images[$i]->field_bi_imagen?>">
             
-              <a href="interna-<?=$images[$i]->nid?>"
+              <a href="/<?=$lang?>/banco-imagenes/interna-<?=$images[$i]->nid?>"
                 ><img
                   src="<?=$b->fixbiurl('w_640',$images[$i]->field_is_video == '1' ? strtolower(str_replace('.mp4', '.jpg', $images[$i]->field_bi_imagen)): $images[$i]->field_bi_imagen)?>"
                   alt="<?=$images[$i]->title?>"
@@ -243,19 +243,19 @@ $content2 = json_encode($content);
       <h3><?=$infoGnrl->field_bi_ui_10?> </h3>
       <div class="grid-layout">
           <div class="row-1">
-            <a class="size1" href="resultados/?productid=<?=$products[0]->nid?>"
+            <a class="size1" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[0]->nid?>"
               ><strong class="uppercase"><?=$products[0]->title?></strong
               ><img
                 src="<?=$products[0]->field_cover_image?>"
                 alt="resultados"
             /></a>
-            <a class="size2" href="resultados/?productid=<?=$products[1]->nid?>"
+            <a class="size2" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[1]->nid?>"
               ><strong class="uppercase"><?=$products[1]->title?></strong
               ><img
                 src="<?=$products[1]->field_cover_image?>"
                 alt="resultados"
             /></a>
-            <a class="size1" href="resultados/?productid=<?=$products[2]->nid?>"
+            <a class="size1" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[2]->nid?>"
               ><strong class="uppercase"><?=$products[2]->title?></strong
               ><img
                 src="<?=$products[2]->field_cover_image?>"
@@ -265,19 +265,19 @@ $content2 = json_encode($content);
           <div class="row-2">
             <div class="col-1">
               <div class="col-1__row-1">
-                <a class="size3" href="resultados/?productid=<?=$products[3]->nid?>"
+                <a class="size3" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[3]->nid?>"
                   ><strong class="uppercase"><?=$products[3]->title?></strong
                   ><img
                     src="<?=$products[3]->field_cover_image?>"
                     alt="resultados"
                 /></a>
-                <a class="size4" href="resultados/?productid=<?=$products[4]->nid?>"
+                <a class="size4" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[4]->nid?>"
                   ><strong class="uppercase"><?=$products[4]->title?></strong
                   ><img
                     src="<?=$products[4]->field_cover_image?>"
                     alt="resultados"
                 /></a>
-                <a class="size4" href="resultados/?productid=<?=$products[6]->nid?>"
+                <a class="size4" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[6]->nid?>"
                   ><strong class="uppercase"><?=$products[6]->title?></strong
                   ><img
                     src="<?=$products[6]->field_cover_image?>"
@@ -285,13 +285,13 @@ $content2 = json_encode($content);
                 /></a>
               </div>
               <div class="col-1__row-2">
-                <a href="resultados/?productid=<?=$products[7]->nid?>"
+                <a href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[7]->nid?>"
                   ><strong class="uppercase"><?=$products[7]->title?></strong
                   ><img
                     src="<?=$products[7]->field_cover_image?>"
                     alt="resultados"
                 /></a>
-                <a href="resultados/?productid=<?=$products[8]->nid?>"
+                <a href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[8]->nid?>"
                   ><strong class="uppercase"><?=$products[8]->title?></strong
                   ><img
                     src="<?=$products[8]->field_cover_image?>"
@@ -300,13 +300,13 @@ $content2 = json_encode($content);
               </div>
             </div>
             <div class="col-2">
-              <a class="size5" href="resultados/?productid=<?=$products[9]->nid?>"
+              <a class="size5" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[9]->nid?>"
                 ><strong class="uppercase"><?=$products[9]->title?></strong
                 ><img
                   src="<?=$products[9]->field_cover_image?>"
                   alt="resultados"
               /></a>
-              <a class="size5" href="resultados/?productid=<?=$products[11]->nid?>"
+              <a class="size5" href="/<?=$lang?>/banco-imagenes/resultados/?productid=<?=$products[11]->nid?>"
                 ><strong class="uppercase"><?=$products[11]->title?></strong
                 ><img
                   src="<?=$products[11]->field_cover_image?>"

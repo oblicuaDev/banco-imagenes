@@ -7,7 +7,7 @@
   >
     <div class="search-form">
       <?=$infoGnrl->field_bi_texto_banner?>
-      <form action="resultados/" id="searchForm">
+      <form action="/<?=$lang?>/banco-imagenes/resultados/" id="searchForm">
         <div class="autocompleteForm">
           <div class="autocomplete">
             <input
@@ -68,7 +68,7 @@
           <ul class="splide__list">
             <? for ($i=0; $i < 4; $i++) { ?>
             <li class="splide__slide">
-              <a href="interna-<?=$images[$i]->nid?>">
+              <a href="/<?=$lang?>/banco-imagenes/interna-<?=$images[$i]->nid?>">
                 <img
                   src="<?=$b->fixbiurl('c_fit,h_640,w_640/f_webp', $images[$i]->field_bi_imagen)?>"
                   alt="<?=$images[$i]->title?>"
@@ -89,7 +89,7 @@
           <ul class="splide__list">
             <? for ($i=0; $i < 7; $i++) { ?>
             <li class="splide__slide">
-              <a href="interna-<?=$images[$i]->nid?>">
+              <a href="/<?=$lang?>/banco-imagenes/interna-<?=$images[$i]->nid?>">
                 <img
                   src="<?=$b->fixbiurl('c_fit,h_640,w_640/f_webp', $images[$i]->field_bi_imagen)?>"
                   alt="<?=$images[$i]->title?>"

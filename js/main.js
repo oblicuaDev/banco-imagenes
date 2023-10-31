@@ -149,7 +149,7 @@ function filterPortal(product, zone, page = 0, q = 16) {
           let url_explode = image.field_bi_imagen.split("/upload/");
           url_explode = `${url_explode[0]}/upload/w_640/${url_explode[1]}`;
           var template = `<li data-image="${image.field_bi_imagen}">
-          <a href="interna-${image.nid}"
+          <a href="/${actualLang}/banco-imagenes/interna-${image.nid}"
             ><img
               src="${url_explode}"
               alt="${image.title}"
@@ -322,19 +322,19 @@ async function getAllCategoriesWithImages() {
     fetchCategoriesData().then((arrayOfResponses) => {
       let allCategories = arrayOfResponses.flat();
       let template = `<div class="row-1">
-      <a class="size1" href="resultados/?productid=${allCategories[0].nid}"
+      <a class="size1" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[0].nid}"
         ><strong class="uppercase">${allCategories[0].title}</strong
         ><img
           src="${allCategories[0].field_cover_image}"
           alt="results"
       /></a>
-      <a class="size2" href="resultados/?productid=${allCategories[1].nid}"
+      <a class="size2" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[1].nid}"
         ><strong class="uppercase">${allCategories[1].title}</strong
         ><img
           src="${allCategories[1].field_cover_image}"
           alt="results"
       /></a>
-      <a class="size1" href="resultados/?productid=${allCategories[2].nid}"
+      <a class="size1" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[2].nid}"
         ><strong class="uppercase">${allCategories[2].title}</strong
         ><img
           src="${allCategories[2].field_cover_image}"
@@ -344,19 +344,19 @@ async function getAllCategoriesWithImages() {
     <div class="row-2">
       <div class="col-1">
         <div class="col-1__row-1">
-          <a class="size3" href="resultados/?productid=${allCategories[3].nid}"
+          <a class="size3" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[3].nid}"
             ><strong class="uppercase">${allCategories[3].title}</strong
             ><img
               src="${allCategories[3].field_cover_image}"
               alt="results"
           /></a>
-          <a class="size4" href="resultados/?productid=${allCategories[4].nid}"
+          <a class="size4" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[4].nid}"
             ><strong class="uppercase">${allCategories[4].title}</strong
             ><img
               src="${allCategories[4].field_cover_image}"
               alt="results"
           /></a>
-          <a class="size4" href="resultados/?productid=${allCategories[6].nid}"
+          <a class="size4" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[6].nid}"
             ><strong class="uppercase">${allCategories[6].title}</strong
             ><img
               src="${allCategories[6].field_cover_image}"
@@ -364,13 +364,13 @@ async function getAllCategoriesWithImages() {
           /></a>
         </div>
         <div class="col-1__row-2">
-          <a href="resultados/?productid=${allCategories[7].nid}"
+          <a href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[7].nid}"
             ><strong class="uppercase">${allCategories[7].title}</strong
             ><img
               src="${allCategories[7].field_cover_image}"
               alt="results"
           /></a>
-          <a href="resultados/?productid=${allCategories[8].nid}"
+          <a href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[8].nid}"
             ><strong class="uppercase">${allCategories[8].title}</strong
             ><img
               src="${allCategories[8].field_cover_image}"
@@ -379,13 +379,13 @@ async function getAllCategoriesWithImages() {
         </div>
       </div>
       <div class="col-2">
-        <a class="size5" href="resultados/?productid=${allCategories[9].nid}"
+        <a class="size5" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[9].nid}"
           ><strong class="uppercase">${allCategories[9].title}</strong
           ><img
             src="${allCategories[9].field_cover_image}"
             alt="results"
         /></a>
-        <a class="size5" href="resultados/?productid=${allCategories[11].nid}"
+        <a class="size5" href="/${actualLang}/banco-imagenes/resultados/?productid=${allCategories[11].nid}"
           ><strong class="uppercase">${allCategories[11].title}</strong
           ><img
             src="${allCategories[11].field_cover_image}"

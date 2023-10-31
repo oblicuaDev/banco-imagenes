@@ -4,7 +4,7 @@
         <a href="/banco-imagenes/">
             <img src="img/logo_w0.svg" alt="logo" />
         </a>
-        <form action="resultados/" id="searchHeaderForm">
+        <form action="/<?=$lang?>/banco-imagenes/resultados/" id="searchHeaderForm">
         <div class="autocomplete">
             <span>
                 <input type="search"   aria-label="search"

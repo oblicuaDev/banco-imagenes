@@ -1,9 +1,14 @@
-<? $bodyClass='intern';$header2 =1; include 'includes/header.php';$infoGnrl = $b->BIgeneralInfo;$image
-= $b->getImages(false, false, $_GET["id"]);
-if($image->field_bi_producto_relacionado != "" && $image->field_bi_zona_rel !=
-"" ){ $explode1 = explode(", ", $image->field_bi_producto_relacionado);
-$explode2 = explode(", ", $image->field_bi_zona_rel); $imagesRel=
-$b->getImages($explode1, $explode2); } 
+<?php
+$bodyClass='intern';
+$header2 =1; 
+include 'includes/header.php';
+$infoGnrl = $b->BIgeneralInfo;
+$image = $b->getImages(false, false, $_GET["id"]);
+if($image->field_bi_producto_relacionado != "" && $image->field_bi_zona_rel != ""){ 
+  $explode1 = explode(", ", $image->field_bi_producto_relacionado);
+  $explode2 = explode(", ", $image->field_bi_zona_rel); 
+  $imagesRel= $b->getImages($explode1, $explode2); 
+} 
 ?>
 <main>
   <section class="fullImage">
@@ -77,7 +82,7 @@ $b->getImages($explode1, $explode2); }
     <h3> Imágenes / videos relacionados</h3>
     <div class="grid-rela">
       <? for ($i=0; $i < count($imagesRel); $i++) { ?>
-      <a href="interna-<?=$imagesRel[$i]->nid?>">
+      <a href="/<?=$lang?>/banco-imagenes/interna-<?=$imagesRel[$i]->nid?>">
         <img
           src="<?=$b->fixbiurl('w_640',$imagesRel[$i]->field_is_video == '1' ? strtolower(str_replace('.mp4', '.jpg', $imagesRel[$i]->field_bi_imagen)): $imagesRel[$i]->field_bi_imagen)?>"
           alt="<?=$imagesRel[$i]->title?>"

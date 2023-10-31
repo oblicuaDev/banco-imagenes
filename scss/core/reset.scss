@@ -5,7 +5,6 @@
   font-style: inherit;
   font-size: 100%;
   border: 0;
-  outline: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -92,11 +91,6 @@ var,
 optgroup {
   font-style: inherit;
   font-weight: inherit;
-}
-
-a:focus,
-input[type="text"] {
-  outline: 0px;
 }
 
 audio,
